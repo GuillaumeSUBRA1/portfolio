@@ -1,0 +1,37 @@
+.top-bar {
+    display: flex;
+    position: fixed;
+    top: 0;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    height: 80px;
+    backdrop-filter: blur(5px);
+
+
+    .title,
+    .menus{
+        display: flex;
+    }
+
+    .title {
+        width: 50%;
+        font-size: 2em;
+    }
+
+    .menus{
+        width: 50%;
+        justify-content: end;
+
+        .menu{
+            cursor: pointer;
+            font-size: 1.2em;
+            margin-left: 20px;
+            transition: font-size 0.2s ease;
+            
+            &:hover{
+                font-size: 1.3em;
+            }
+        }
+    }
+}
