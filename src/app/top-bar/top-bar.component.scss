@@ -4,8 +4,9 @@
     top: 0;
     align-items: center;
     justify-content: space-between;
+    padding: 0 10%;
     width: 80%;
-    height: 80px;
+    height: 100px;
     backdrop-filter: blur(5px);
 
 
@@ -16,7 +17,7 @@
 
     .title {
         width: 50%;
-        font-size: 2em;
+        font-size: 1.5em;
     }
 
     .menus{
@@ -27,11 +28,6 @@
             cursor: pointer;
             font-size: 1.2em;
             margin-left: 20px;
-            transition: font-size 0.2s ease;
-            
-            &:hover{
-                font-size: 1.3em;
-            }
         }
     }
 }

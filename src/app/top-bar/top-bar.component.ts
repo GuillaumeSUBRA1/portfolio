@@ -8,6 +8,5 @@ import { Component } from '@angular/core';
   styleUrl: './top-bar.component.scss'
 })
 export class TopBarComponent {
-  menus = ['Accueil', 'Projets', 'Contact'];
-
+  menus = ['Accueil', 'Compétences', 'Projets', 'Formation', 'Services', 'Contact'];
 }

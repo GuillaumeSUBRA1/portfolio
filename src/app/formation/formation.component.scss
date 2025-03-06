@@ -1,0 +1,42 @@
+.container {
+    width: 100%;
+    background: rgb(3, 3, 67);
+    padding: 50px;
+    border-radius: 50px;
+
+    .titre-section {
+        margin-bottom: 50px;
+        font-size: 2em;
+        width: 100%;
+        text-align: center;
+    }
+
+    .formation {
+        max-width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+
+        .diplome {
+            width: 30%;
+            border: 2px solid cyan;
+            box-shadow: inset;
+            padding: 10px;
+            text-align: center;
+            background: rgba(0, 255, 255, 0.682);
+            border-radius: 5px;
+
+            .titre {
+                font-size: 1.5em;
+            }
+
+            .ecole {
+                font-size: 1.2em;
+                font-style: italic;
+            }
+
+            .date {
+                font-size: 1.2em;
+            }
+        }
+    }
+}
