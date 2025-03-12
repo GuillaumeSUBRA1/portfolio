@@ -1,18 +1,20 @@
 .container {
-    max-width: 100%;
-    background: rgb(3, 3, 67);
+    margin: 100px 0;
+    background-image: url('/assets/images/fond/fond-formation.png');
+    background-color: var(--image-background-color);
+    background-blend-mode: overlay;
+    background-position: center;
+    background-size: cover;
     padding: 50px;
     border-radius: 50px;
 
     .titre-section {
         margin-bottom: 50px;
         font-size: 2em;
-        width: 100%;
         text-align: center;
     }
 
     .formation {
-        max-width: 100%;
         display: flex;
         justify-content: space-evenly;
 
@@ -22,7 +24,6 @@
             box-shadow: inset;
             padding: 10px;
             text-align: center;
-            background: rgba(0, 255, 255, 0.682);
             border-radius: 5px;
 
             .titre {
