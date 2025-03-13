@@ -2,13 +2,17 @@
 
     <div class="titre-section">Formation</div>
 
-    <div class="formation">
-        @for (f of formation; track $index) {
-        <div class="diplome">
-            <div class="titre">{{f.titre}}</div>
-            <div class="ecole">{{f.ecole}}</div>
-            <div class="date">{{f.date}}</div>
-        </div>
-        }
-    </div>
+    <p-timeline [value]="formation" layout="vertical" class="formation">
+        <ng-template pTemplate="content" let-f>
+            <div class="diplome">
+                <div class="titre">{{f.titre}}</div>
+                <div class="ecole">{{f.ecole}}</div>
+            </div>
+        </ng-template>
+        <ng-template pTemplate="opposite" let-f>
+            <div class="diplome">
+                <div class="date">{{f.date}}</div>
+            </div>
+        </ng-template>
+    </p-timeline>
 </div>

@@ -10,33 +10,40 @@
 
     .titre-section {
         margin-bottom: 50px;
-        font-size: 2em;
+        font-size: var(--title-font-size);
         text-align: center;
     }
 
     .formation {
-        display: flex;
-        justify-content: space-evenly;
+        margin: auto;
+
+        .p-timeline {
+            .p-timeline-event {
+                margin-bottom: 20px;
+
+                .p-timeline-event-marker {
+                    background-image: url('/assets/images/fond/degree.svg');
+                    width: 30px;
+                    height: 30px;
+                    background-size: cover;
+                    border: 2px solid cyan;
+                }
+            }
+        }
 
         .diplome {
-            width: 30%;
-            border: 2px solid cyan;
             box-shadow: inset;
-            padding: 10px;
-            text-align: center;
-            border-radius: 5px;
+            padding: 0 20px;
+            border-radius: 50px;
+            margin-bottom: 50px;
 
-            .titre {
-                font-size: 1.5em;
+            .titre,.date {
+                font-size: 1.2em;
             }
 
             .ecole {
                 font-size: 1.2em;
                 font-style: italic;
-            }
-
-            .date {
-                font-size: 1.2em;
             }
         }
     }

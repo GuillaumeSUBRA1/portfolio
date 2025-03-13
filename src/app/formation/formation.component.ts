@@ -1,19 +1,21 @@
-import { Component } from '@angular/core';
+import { Component, ViewEncapsulation } from '@angular/core';
+import { TimelineModule } from 'primeng/timeline';
 
 @Component({
   selector: 'formation',
   standalone: true,
-  imports: [],
+  imports: [TimelineModule],
   templateUrl: './formation.component.html',
-  styleUrl: './formation.component.scss'
+  styleUrl: './formation.component.scss',
+  encapsulation: ViewEncapsulation.None
 })
 export class FormationComponent {
 
   formation = [
     {
-      titre: "Licence Informatique",
-      ecole: "Université de la Réunion",
-      date: 2020
+      titre: "Master 2 Informatique",
+      ecole: "Université de Rennes",
+      date: 2022
     },
     {
       titre: "Master 1 Informatique",
@@ -21,9 +23,9 @@ export class FormationComponent {
       date: 2021
     },
     {
-      titre: "Master 2 Informatique",
-      ecole: "Université de Rennes",
-      date: 2022
+      titre: "Licence Informatique",
+      ecole: "Université de la Réunion",
+      date: 2020
     }
   ]
 }
