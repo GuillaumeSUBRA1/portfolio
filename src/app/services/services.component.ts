@@ -19,7 +19,7 @@ export class ServicesComponent {
     {
       titre: "Développement Mobile",
       description: "Création et maintenance d'applications mobiles interactives et performantes.",
-      icon: "web"
+      icon: "smartphone"
     },
     {
       titre: "Création portfolio",
