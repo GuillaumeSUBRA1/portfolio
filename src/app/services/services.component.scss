@@ -1,0 +1,51 @@
+.container {
+    margin: 100px 0;
+    background-image: url('/assets/images/fond/fond-service.png');
+    background-color: var(--image-background-color);
+    background-blend-mode: overlay;
+    background-position: center;
+    background-size: cover;
+    padding: 50px;
+    border-radius: 50px;
+
+    .titre-section {
+        margin-bottom: 50px;
+        font-size: var(--title-font-size);
+        text-align: center;
+    }
+
+    .services {
+        display: inline-grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        padding: 50px;
+        border-radius: 50px;
+        gap: 50px;
+
+        .service {
+            display: flex;
+            gap: 20px;
+            border: 2px solid cyan;
+            border-radius: 50px;
+            padding: 20px;
+            transition: all 0.3s ease-in-out;
+            &:hover {
+                scale: 1.05;
+            }
+
+            img {
+                width: 80px;
+                height: 80px;
+            }
+
+            .titre {
+                font-size: 1.6em;
+                margin-bottom: 10px;
+            }
+
+            .description {
+                font-size: 1em;
+            }
+        }
+    }
+}
