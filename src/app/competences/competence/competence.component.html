@@ -1,0 +1,10 @@
+<div class="cell">
+    @if (type() === 'dev') {
+        <img [src]="'./../../assets/icons/technos/dev/' + image() + '.svg'" alt="techno">
+    } @else if (type() === 'devops') {
+        <img [src]="'./../../assets/icons/technos/devops/' + image() + '.svg'" alt="techno">
+    } @else {
+        <img [src]="'./../../assets/icons/technos/qualite/' + image() + '.svg'" alt="techno">
+    }
+    <div class="nom">{{image()}}</div>
+</div>
