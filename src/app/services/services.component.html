@@ -3,7 +3,7 @@
     <div class="services">
         @for (s of services; track $index) {
         <div class="service">
-            <img [src]="'assets/icons/service/' + s.icon + '.svg'" alt="icon">
+            <img [src]="'./../../assets/icons/service/' + s.icon + '.svg'" alt="icon">
             <div class="description">
                 <div class="titre">{{s.titre}}</div>
                 <div class="description">{{s.description}}</div>
