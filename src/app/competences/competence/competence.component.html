@@ -7,4 +7,7 @@
         <img [src]="'assets/icons/technos/qualite/' + image() + '.svg'" alt="techno">
     }
     <div class="nom">{{image()}}</div>
+    @if (type() === 'qualite') {
+        <p-progressBar class="progress" [value]="valeur()"></p-progressBar>
+    }
 </div>
